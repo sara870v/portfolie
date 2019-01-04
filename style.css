@@ -1,0 +1,372 @@
+/*GENERELT*/
+* {
+    box-sizing: border-box;
+
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.tekstboks {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.tekstboks h1 {
+    text-align: center;
+    margin: 2em 0 1.5em 13em;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkgrey;
+}
+
+h4 {
+    text-decoration: underline;
+}
+
+/*GENERELT*/
+
+/*NAV*/
+
+#menuknap {
+    display: none;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: white;
+    height: 4.6em;
+}
+
+
+#navbar_mobil {
+    outline: 2px solid black;
+
+    float: left;
+}
+
+
+#navbar a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding-top: 1.7em;
+    padding-bottom: 1.7em;
+    margin-left: 2.5em;
+    text-decoration: none;
+
+    position: relative;
+
+}
+
+#navbar img {
+    background-size: 100%;
+    width: 9em;
+    height: 3.5em;
+    float: right;
+    margin: 0.5em 2em 0 0;
+    /*    outline: 2px solid black;*/
+
+}
+
+#navbar a:hover {
+    color: black;
+}
+
+#navbar a::before {
+    content: '';
+    display: block;
+    height: 0.2em;
+
+    background-color: black;
+
+    position: absolute;
+
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+#navbar a:hover::before {
+    width: 100%;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 6em;
+}
+
+/*NAV SLUT*/
+
+
+/* COVER */
+
+#cover {
+    height: 30em;
+    background-color: paleturquoise;
+}
+
+/* COVER SLUT*/
+
+/*CV*/
+
+#sectionwrapper {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#sectionwrapper .column1 {
+    width: 30em;
+    height: 45em;
+    padding: 1em;
+    margin: 4em 1em 4em 9em;
+
+
+}
+
+#sectionwrapper .column1 img {
+    background-size: 100%;
+    width: 20em;
+    margin-left: 3em;
+
+}
+
+/*CV SLUT*/
+
+/*KONTAKT MIG*/
+
+#sectionwrapper2 {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#sectionwrapper2 .column1 {
+    width: 30em;
+    height: em;
+    padding: 1em;
+    margin: 4em 1em 4em 9em;
+
+
+}
+
+#sectionwrapper2 .column1 img {
+    background-size: 100%;
+    width: 20em;
+    margin-left: 3em;
+
+}
+
+/*KONTAKT MIG SLUT*/
+
+
+/* OPGAVER PÅ SIDEN */
+.sectionwrapper4 img {
+    width: 25em;
+    margin: 4em 1em 0 3em;
+}
+
+.sectionwrapper5 {
+    margin: 2em;
+    padding: 2em;
+}
+
+/* OPGAVER PÅ SIDEN SLUT */
+
+
+/*BODY*/
+
+body {
+    background-color: white;
+    /*    padding: 2em;*/
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+}
+
+
+.row {
+    max-width: 100em;
+    margin-left: 5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.column {
+    flex-basis: 300px;
+
+}
+
+.column img:hover {
+    opacity: 0.7;
+}
+}
+
+.column2 {
+    margin-left: 27em;
+}
+
+h1 {
+    font-size: 2em;
+
+}
+
+/*
+.forside,
+h1 {
+    width: 17em;
+}
+*/
+
+.row,
+.row > .column {
+    padding: 0.8em;
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.content {
+    background-color: white;
+    padding: 1em;
+
+
+}
+
+.content img {
+    width: 100%;
+}
+
+/*BODY SLUT*/
+
+
+/*CONTAINER FOR HVERT PROJEKT*/
+
+.sectionwrapper4 {
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.column4 {
+    flex-direction: row;
+}
+
+
+
+/*CONTAINER FOR HVERT PROJEKT SLUT*/
+
+
+/* FOOTER */
+
+.sectionwrapper6 {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: paleturquoise;
+    padding-left: 1em;
+
+}
+
+.sectionwrapper6 p {
+    flex-basis: 10em;
+}
+
+/* FOOOTER SLUT */
+
+
+
+/*BURGERMENU*/
+
+#menuknap {
+    background-size: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+/*
+.hidden {
+transform: translateX(-100%)
+}
+*/
+
+
+#menu {
+    list-style-type: none;
+    /*    transisiton: transform(eller opacity) 1s;*/
+}
+
+/*BURGERMENU SLUT*/
+
+
+/*MEDIA QUORRIES*/
+
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+
+    .row {
+        margin-left: 2.5em;
+    }
+
+    #menuknap {
+        display: block;
+        float: left;
+        padding: 1.5em
+    }
+
+    #menupunkter {
+        display: none;
+    }
+
+    .sectionwrapper4 {
+        margin: auto;
+    }
+
+    #sectionwrapper2 .column1 {
+        padding: 1em;
+        margin: 1em;
+    }
+
+
+    #sectionwrapper2 .column1 img {
+        padding: 1em;
+        margin: 0.5em;
+    }
+}
+
+
+/*MEDIA QUORRIES SLUT*/
