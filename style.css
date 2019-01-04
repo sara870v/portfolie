@@ -168,13 +168,19 @@ h4 {
 #sectionwrapper2 {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
 
 }
 
-.column1 {
+.column_kontakt {
     padding: 3em;
 
 
+}
+
+.column_kontakt img {
+    width: 2.3em;
+    height: auto;
 }
 
 
