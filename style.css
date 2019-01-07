@@ -1,369 +1,379 @@
-/*GENERELT*/
-* {
-    box-sizing: border-box;
+    /*GENERELT*/
+    * {
+        box-sizing: border-box;
+
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .tekstboks {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 2em;
 
-}
-
-img {
-    width: 100%;
-    height: auto;
-}
-
-.tekstboks {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 2em;
-
-}
-
-
-
-a:link {
-    color: black;
-    text-decoration: none;
-}
-
-a:hover {
-    color: darkgrey;
-}
-
-a:visited {
-    color: black;
-}
-
-h4 {
-    text-decoration: underline;
-}
-
-/*GENERELT*/
-
-/*NAV*/
-
-.navtop {
-    height: 5em;
-}
-
-
-.menupunkter1 a {
-    float: left;
-    display: block;
-    color: black;
-    text-align: center;
-    padding-top: 2.5em;
-    padding-bottom: 1.7em;
-    margin: 0 1em 1em 2em;
-    text-decoration: none;
-
-    position: relative;
-
-}
-
-
-.menupunkter1 a:hover {
-    color: black;
-}
-
-.menupunkter1 a::before {
-    content: '';
-    display: block;
-    height: 0.2em;
-
-    background-color: black;
-
-    position: absolute;
-
-    top: 0;
-    width: 0%;
-
-    transition: all ease-in-out 250ms;
-}
-
-.menupunkter1 a:hover::before {
-    width: 100%;
-}
-
-.logo img {
-    float: right;
-    width: 10em;
-    height: auto;
-    margin: 1.3em 1.3em 0em 0em;
-
-}
-
-
-.menupunkter2 {
-    margin: 1em 1em 1em 1em;
-}
-
-.menupunkter2 a {
-    text-decoration: none;
-    line-height: 4em;
-    display: block;
-    border-bottom: 0.1em solid lightgrey;
-    text-align: center;
-}
-
-.menuknap1 {
-    font-size: 2em;
-    padding: 0.5em;
-    display: none;
-
-}
-
-
-
-/*NAV SLUT*/
-
-
-/*FORSIDE*/
-
-
-.forside {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    margin: 3em 2em 4em 2em;
-
-}
-
-.forside p {
-    text-align: center;
-    line-height: 2em;
-}
-
-.forside ul {
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: center;
-    padding: 1em;
-}
-
-
-.forside ul li {
-    display: inline-block;
-}
-
-.forside ul a {
-    text-decoration: none;
-    border: 0.1em solid black;
-    background-color: black;
-    color: white;
-    padding: 1em 3em 1em 3em;
-    transition: 0.6s ease;
-
-}
-
-.forside ul a:hover {
-    background-color: lightgrey;
-    color: white;
-    opacity: 0.9;
-}
-
-
-/*FORSIDE SLUT*/
-
-
-
-
-/*CV*/
-
-#sectionwrapper {
-    display: flex;
-    flex-wrap: wrap;
-
-}
-
-.column1 {
-    flex-basis: 20em;
-    flex-grow: 1;
-    padding: 3em;
-    line-height: 1.5em;
-}
-
-
-
-
-/*CV SLUT*/
-
-/*KONTAKT MIG*/
-
-#sectionwrapper2 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    margin-bottom: 3.5em;
-
-}
-
-.column_kontakt {
-    padding: 3em;
-
-
-}
-
-.column_kontakt img {
-    width: 2.3em;
-    height: auto;
-}
-
-
-/*KONTAKT MIG SLUT*/
-
-
-/* OPGAVER PÅ SIDEN */
-
-
-.sectionwrapper5 {
-    margin: 0 2em 2em 2em;
-}
-
-/* OPGAVER PÅ SIDEN SLUT */
-
-
-/*BODY*/
-
-body {
-    background-color: white;
-    /*    padding: 2em;*/
-    font-family: 'Montserrat', sans-serif;
-    margin: auto;
-}
-
-
-.row {
-    max-width: 100em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.column {
-    flex-basis: 25em;
-
-}
-
-.column img:hover {
-    opacity: 0.7;
-    transform: scale(1.2);
-}
-
-
-.column2 {
-    margin-left: 27em;
-}
-
-h1 {
-    font-size: 2em;
-
-}
-
-
-.row,
-.row > .column {
-    padding: 0.8em;
-}
-
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-
-.content {
-    background-color: white;
-    padding: 1em;
-
-
-}
-
-.content img {
-    width: 100%;
-}
-
-/*BODY SLUT*/
-
-
-/*CONTAINER FOR HVERT PROJEKT*/
-
-.sectionwrapper4 {
-    flex-wrap: wrap;
-    display: flex;
-}
-
-.column4 {
-    flex-basis: 19em;
-    flex-grow: 1;
-    margin: 2em 1em 1em 1em;
-    padding: 1em;
-}
-
-
-
-/*CONTAINER FOR HVERT PROJEKT SLUT*/
-
-
-/* FOOTER */
-
-.sectionwrapper6 {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #97c0dc;
-    padding-left: 1em;
-    justify-content: center;
-    text-align: center;
-
-}
-
-.sectionwrapper6 p {
-    color: white;
-}
-
-/* FOOOTER SLUT */
-
-
-
-/*BURGERMENU*/
-
-.hidden {
-    display: none;
-}
-
-
-/*BURGERMENU SLUT*/
-
-
-/*MEDIA QUORRIES*/
-
-@media screen and (max-width: 90em) {
-    .column {
-        width: 50%;
     }
 
 
-}
 
-@media screen and (max-width: 60em) {
-    .column {
+    a:link {
+        color: black;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: darkgrey;
+    }
+
+    a:visited {
+        color: black;
+    }
+
+    h4 {
+        text-decoration: underline;
+    }
+
+    /*GENERELT*/
+
+    /*NAV*/
+
+    .navtop {
+        height: 5em;
+    }
+
+
+    .menupunkter1 a {
+        float: left;
+        display: block;
+        color: black;
+        text-align: center;
+        padding-top: 2.5em;
+        padding-bottom: 1.7em;
+        margin: 0 1em 1em 2em;
+        text-decoration: none;
+
+        position: relative;
+
+    }
+
+
+    .menupunkter1 a:hover {
+        color: black;
+    }
+
+    .menupunkter1 a::before {
+        content: '';
+        display: block;
+        height: 0.2em;
+
+        background-color: black;
+
+        position: absolute;
+
+        top: 0;
+        width: 0%;
+
+        transition: all ease-in-out 250ms;
+    }
+
+    .menupunkter1 a:hover::before {
         width: 100%;
     }
 
-    .menuknap1 {
-        display: block;
+    .logo img {
+        float: right;
+        width: 10em;
+        height: auto;
+        margin: 1.3em 1.3em 0em 0em;
+
     }
 
-    .menupunkter1 {
+
+    .menupunkter2 {
+        margin: 1em 1em 1em 1em;
+    }
+
+    .menupunkter2 a {
+        text-decoration: none;
+        line-height: 4em;
+        display: block;
+        border-bottom: 0.1em solid lightgrey;
+        text-align: center;
+    }
+
+    .menuknap1 {
+        font-size: 2em;
+        padding: 0.5em;
+        display: none;
+
+    }
+
+    /*NAV SLUT*/
+
+
+    /*FORSIDE*/
+
+
+    .forside1 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        margin: 3em 2em 0em 2em;
+
+    }
+
+    .forside2 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        margin: 1em 0em 3em 1em;
+
+    }
+
+    .forside p {
+        text-align: center;
+        line-height: 2em;
+    }
+
+    .knap1,
+    .knap2 {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        padding: 1em;
+        opacity: 0.88;
+    }
+
+
+    .knap1 a,
+    .knap2 a {
+        color: white;
+    }
+
+    .knap1,
+    .knap2 {
+        text-decoration: none;
+        border: 0.1em solid white;
+        background-color: black;
+        color: white;
+        padding: 1em 3em 1em 3em;
+        transition: 0.6s ease;
+
+    }
+
+    .knap1:hover {
+        background-color: darkgrey;
+        color: white;
+        opacity: 0.9;
+    }
+
+    .knap2:hover {
+        background-color: darkgray;
+        color: white;
+        opacity: 0.9;
+    }
+
+    /*FORSIDE SLUT*/
+
+
+    /*CV*/
+
+    #sectionwrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .column1 {
+        flex-basis: 20em;
+        flex-grow: 1;
+        padding: 3em;
+        line-height: 1.5em;
+    }
+
+    /*CV SLUT*/
+
+    /*KONTAKT MIG*/
+
+    #sectionwrapper2 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-bottom: 3.5em;
+
+    }
+
+    .column_kontakt {
+        padding: 3em;
+
+
+    }
+
+    .column_kontakt img {
+        width: 2.3em;
+        height: auto;
+    }
+
+
+    /*KONTAKT MIG SLUT*/
+
+
+    /* OPGAVER PÅ SIDEN */
+
+
+    .sectionwrapper5 {
+        margin: 0 2em 2em 2em;
+    }
+
+    /* OPGAVER PÅ SIDEN SLUT */
+
+
+    /*BODY*/
+
+    body {
+        background-color: white;
+        /*    padding: 2em;*/
+        font-family: 'Montserrat', sans-serif;
+        margin: auto;
+    }
+
+
+    .row {
+        max-width: 100em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .column {
+        flex-basis: 25em;
+
+    }
+
+    .column img:hover {
+        opacity: 0.7;
+        transform: scale(1.2);
+    }
+
+
+    .column2 {
+        margin-left: 27em;
+    }
+
+    h1 {
+        font-size: 2em;
+
+    }
+
+
+    .row,
+    .row > .column {
+        padding: 0.8em;
+    }
+
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+
+    .content {
+        background-color: white;
+        padding: 1em;
+
+
+    }
+
+    .content img {
+        width: 100%;
+    }
+
+    /*BODY SLUT*/
+
+
+    /*CONTAINER FOR HVERT PROJEKT*/
+
+    .sectionwrapper4 {
+        flex-wrap: wrap;
+        display: flex;
+    }
+
+    .column4 {
+        flex-basis: 19em;
+        flex-grow: 1;
+        margin: 2em 1em 1em 1em;
+        padding: 1em;
+    }
+
+
+
+    /*CONTAINER FOR HVERT PROJEKT SLUT*/
+
+
+    /* FOOTER */
+
+    .sectionwrapper6 {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #97c0dc;
+        padding-left: 1em;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    .sectionwrapper6 p {
+        color: white;
+    }
+
+    /* FOOOTER SLUT */
+
+
+
+    /*BURGERMENU*/
+
+    .hidden {
         display: none;
     }
 
-    .logo img {
-        margin: 0.8em 0.8em 0.8em 0em;
+
+    /*BURGERMENU SLUT*/
+
+
+    /*MEDIA QUORRIES*/
+
+    @media screen and (max-width: 90em) {
+        .column {
+            width: 50%;
+        }
+
+
     }
 
-}
+    @media screen and (max-width: 60em) {
+        .column {
+            width: 100%;
+        }
+
+        .menuknap1 {
+            display: block;
+        }
+
+        .menupunkter1 {
+            display: none;
+        }
+
+        .logo img {
+            margin: 0.8em 0.8em 0.8em 0em;
+        }
+
+    }
 
 
-/*MEDIA QUORRIES SLUT*/
+    /*MEDIA QUORRIES SLUT*/
