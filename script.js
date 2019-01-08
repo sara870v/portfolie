@@ -1,5 +1,3 @@
-//alert('hello world!');
-
 //BURGERMENU
 //registrer klik på menu - knap
 window.addEventListener("load", sidenVises);
